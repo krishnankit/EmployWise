@@ -1,0 +1,5 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.error-field {
+  font-size: 0.8rem;
+}
