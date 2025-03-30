@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import FormContainer from "../components/FormContainer"
 import Loader from "../components/Loader"
 import { useAuth } from "../contexts/AuthContext"
-import { FORM as FORM_CONSTANTS } from "../../constants"
+import { FORM as FORM_CONSTANTS, URLS } from "../../constants"
 import { toast } from "react-toastify"
 
 const LoginScreen = () => {
@@ -74,7 +74,7 @@ const LoginScreen = () => {
       )
       .then(res => res.json())
       .then(data => {
-        login({ data })
+        login({ email: data.email, id: data.id})
       })
       .catch(error => {
         // LOGIN DOES NOT FAIL FOR WRON PASSWORDS SO NO NEED TO HANDLE THAT

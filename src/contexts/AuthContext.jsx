@@ -14,7 +14,7 @@ export default function AuthContextProvider({ children }) {
 
   function login(user) {
     localStorage.setItem("user", JSON.stringify(user))
-    setUser(data)
+    setUser(user)
   }
 
   return (

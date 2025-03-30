@@ -10,4 +10,3 @@ export const FORM = {
   FIRST_NAME: "first_name",
   LAST_NAME: "last_name"
 }
-// https://reqres.in/api/users/1
